@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SolidityAdvanceCourse
+## DeFi Assessment
+
+This Solidity program is a simple program that can be used by a user to apply for a wallet insurance and/or collateral protection loan.
+
+
+
+
+## Description
+
+This program contains solidity contracts as well as front-end part. Althought they were not connected together for demo, they are fully functioning individually. 
+There are further 2 parts : Wallet Insurance and Collateral Protection
+Each contain the functions suitable for each.
+
+
+
 
 ## Getting Started
 
-First, run the development server:
+### Installing
+Hardhat and next, along with Tailwind css, are used in this project.
+In order to deploy, .env file needs to have your API's URL ( Infura was chosen here, another alternative is alchemy), your private key of an account ( as it consumes sepolia ETH to deploy). And the last is the contract address of the deployed contract.
+Install required dependancies.
+Use hardhat commands for solidity contracts and npm/yarn commands for next.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Executing program
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can use various code editors to run this program. VS Code was used here to run the front-end and Remix to run back-end and show functionality.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Deploy the contract to alchemy or infura / Use Remix.
+Use ```npm run dev``` to start a local server of next.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+On starting server, a Connect Button is shown.
+Then, 2 buttons : Wallet Insurance, and Collateral Protection
+You can choose your preferred.
+The functions related to your choice will then appear.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Authors
+Shiv  
